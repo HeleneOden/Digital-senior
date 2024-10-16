@@ -1,0 +1,167 @@
+/* 
+I det här dokumentet hittar du all styling för det här projektet. 
+Det är en hel del CSS som du inte har lärt dig ännu. Bland annat
+använder vi något som heter flexbox eller display: flex för att
+skapa själva layouten. Det behöver du inte bry dig om idag – det
+tar vi i morgon!
+*/
+
+/* Här är styling som gäller för hela sidan */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    text-align: center;
+    
+  }
+  
+  nav {
+    background-color: #333;
+  }
+  
+  .nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-menu li {
+    position: relative;
+  }
+  
+  .nav-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .nav-menu li a:hover {
+    background-color: #111;
+  }
+  
+  /* Dropdown */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #111;
+  }
+  /* Klassen container använder vi på flera ställen i vår HTML. Den
+  gör att varje sektion tar upp 80% av sidans bredd och att det blir
+  samma padding över hela sidan. Den styr med andra ord grund-layouten.
+  Den behöver du inte ändra i så mycket om du inte vill ändra den
+  övergripande strukturen */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+    
+  
+  }
+  
+  
+  /* Här är styling som gäller för rubriker och text */
+  h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 40px;
+  }
+  
+  h2 {
+    font-size: 50px;
+  }
+  
+  h3 {
+    font-size: 25px;
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.5;
+  }
+  
+  /* Här är styling som gäller för toppen på sidan */
+  header {
+    /* En ny grej är att vi nu lägger in bilden i CSS
+    som en bakgrund, här redigerar du den. */
+    background-image: url("./images/background-bild2.jpg");
+    background-repeat: no-repeat;
+    /* Styr bilden */
+    background-size: cover;
+    /* Styr bilden */
+    padding: 100px 0;
+    font-size: 100%;
+  }
+  
+  /* Styling för knappen */
+  header a {
+    color: white;
+    border: white solid;
+  
+    /* Gör att knappen får runda hörn */
+    border-radius: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 25px;
+    display: inline-block;
+  }
+  
+  /* Styling för ikonerna */
+  .icons {
+    /* Gör att dom lägger sig brevid varandra – men mer om detta i morgon. */
+    display: flex;
+    justify-content: center;
+    align-items: top;
+  }
+  
+  .icon {
+    margin: 40px;
+  }
+  
+  .icon img {
+    width: 150px;
+  }
+  
+  /* Styling för "about-us"-sektionen */
+  .about-us {
+    background-color: #dcdcdc;
+  }
+  
+  /* Styling för footern på sidan */
+  footer {
+    background-color: #151515;
+    color: white;
+  }
+  
+  footer {
+    background-color: #151515;
+    color: white;
+    padding: 20px 0;
+  }

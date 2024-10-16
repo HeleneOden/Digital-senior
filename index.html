@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<!-- Yay! Idag bygger vi en företagssite. Här är två saker som kan
+  vara bra att veta innan du börjar.
+  
+  1. Vi använder en klass som heter container på alla sektioner på
+  den här sidan. Den styr själva grundstrukturen, t.ex. hur bred varje
+  sektion är, hur texten ska vara formatterad m.m. Helt enkelt styling
+  som ska gälla för alla sektioner.
+  
+  2. Vi använder en bakgrundsbild till toppen av sidan. Det är ett vanlig
+  metod för att få text ovanpå en bild. Det som är lite annorlunda med denna
+  metod är att bilden läggs in i CSS-filen och inte i HTML-filen, precis som
+  om du hade gjort en bakgrundsfärg. Ta en titt i CSS-filen efter
+  background-image så ser du hur det är kopplat!
+
+      Lycka till! -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+
+    <!--En font som vi denna gång hämtar från google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Senior Digital</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul class="nav-menu">
+          <li><a href="#home">Hem</a></li>
+          <li class="dropdown">
+              <a href="#about" class="dropbtn">Om oss</a>
+              <div class="dropdown-content">
+                  <a href="#team">Online kurser</a>
+                  <a href="#history">Webbinarium</a>
+                  <a href="#mission">Vår mission</a>
+              </div>
+          </li>
+          <li><a href="#services">Tjänster</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+      </ul>
+  </nav>
+
+    <!-- Här finns all HTML-kod som har med toppen på sidan att göra. Kom
+      ihåg att du hittar bilden i CSS-filen -->
+    <header>
+      <div class="container">
+        <h1>
+          Hej och välkommen till Digital Senior! 🌟 Vi är din digitala mötesplats som stöttar dig i att ta modiga steg in i framtiden. 
+          Var med oss och upptäck hur enkelt och roligt den digitala världen kan vara! 
+          Är du redo att ta klivet? </h1><br>
+        <a href="#">Skriv upp dig på vårt nyhetsbrev</a>
+      </div>
+    </header>
+
+    <!-- Här finns all HTML-kod som har med de tre ikonerna att göra -->
+    <section class="what-we-do">
+      <div class="container">
+        <h2>Några av de fantastiska saker vi gör:</h2>
+
+        <div class="icons">
+          <div class="icon">
+            <img src="./images/icon1.svg" />
+            <h3>Samarbete</h3>
+            <p>Digital Senior har många fina
+               samarbeten med företag och myndigheter.... </p>
+          </div>
+
+          <div class="icon">
+            <img src="./images/icon2.svg" />
+            <h3>Utbildning:</h3>
+            <p>Hos Digital Senior kan du alltid
+               lära dig något nytt, anmäl dig till
+                en av våra intressanta utbildningar. Helt gratis!</p>
+          </div>
+
+          <div class="icon">
+            <img src="./images/icon3.svg" />
+            <h3>Föreläsningar:</h3>
+            <p>Håll dig uppdaterad om det senaste inom IT,
+              varje torsdag presenterar vi ett nytt spännande tema! </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Här finns all HTML-kod som har med "about us"-sektionen att göra -->
+    <section class="about-us">
+      <div class="container">
+        <h2>Vår filosofi och engagerade team</h2>
+        <p>
+          Senior digital startade år 2024 med målet att erbjuda stöd och utbildning
+          för enklare användning av digitala verktyg och tjänster. 
+          
+        </p>
+        <a href="#">Read more</a>
+      </div>
+    </section>
+
+    <!-- Här kan du lägga till kod om du vill fylla i något i footern -->
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </body>
+</html>
